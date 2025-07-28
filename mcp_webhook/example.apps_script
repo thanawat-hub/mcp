@@ -1,0 +1,25 @@
+function sendStockUpdateWebhook() {
+  const url = "https://cf1082603a28.ngrok-free.app/update_stock_by_api"; // แก้เป็นของคุณ
+  const payload = {
+    product_name: "น้ำปลา",
+    stock: 3
+  };
+
+  const options = {
+    method: "post",
+    contentType: "application/json",
+    payload: JSON.stringify(payload)
+  };
+
+  const response = UrlFetchApp.fetch(url, options);
+  Logger.log(response.getContentText());
+}
+
+function setupTrigger() {
+  ScriptApp.newTrigger("sendStockUpdateWebhook")
+    .timeBased()
+    .everyMinutes(1)  // หรือทุกชั่วโมง
+    .create();
+}
+
+
