@@ -85,4 +85,8 @@ uv.lock
 # Local config
 *.local
 
+# Ignore all .json files
 *.json
+
+# But NOT files that have "example" in the filename
+!*example*.json
