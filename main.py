@@ -4,7 +4,7 @@ from mcp.server.fastmcp import FastMCP
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
-mcp = FastMCP("tor-blog")
+mcp = FastMCP("project_blog")
 
 mock_api_url = "https://688246f466a7eb81224e1540.mockapi.io/blogs"
 
