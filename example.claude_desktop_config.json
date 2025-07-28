@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "project_blog": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:/Users/{profilePC}}/Path/to/project-blog",
+        "run",
+        "main.py"
+      ]
+    },
+    "project_blog_webhook": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:/Users/{profilePC}/Path/to/project-blog",
+        "run",
+        "mcp_webhook/main_mcp_server.py"
+      ]
+    }
+  }
+}
